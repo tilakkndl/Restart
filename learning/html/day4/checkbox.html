@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/hanlding">
+        <h1>Checkbox</h1>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading"> Reading</label><br><br>
+        <input type="checkbox" id="traveling" name="hobby" value="traveling">
+        <label for="traveling"> Traveling</label><br><br>
+        <input type="checkbox" id="cooking" name="hobby" value="cooking">
+        <label for="cooking"> Cooking</label><br><br>
+        <input type="checkbox" id="gaming" name="hobby" value="gaming">
+        <label for="gaming"> Gaming</label><br><br>
+        <button type="submit" onclick="handleClick(event)">Submit</button>
+    </form>
+    <script>
+        function handleClick(e) {
+            e.preventDefault();
+            const checkboxes = document.querySelectorAll('input[name="hobby"]:checked');
+        checkboxes.forEach((checkbox)=>{
+            console.log(checkbox.value);
+        })
+            alert("Form submitted!");
+        }
+    </script>
+</body>
+</html>
