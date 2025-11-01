@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border="white" bgcolor="black" style="color: white;">
+    <caption>Student Information</caption>
+    <thead>
+        <tr>
+            <th rowspan="4">Info</th>
+            <th rowspan="2">Name</th>
+<th colspan="2">Address</th>
+
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="3"></th>
+            <td>John Doe</td>
+            <td>New York</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>Jane Smith</td>
+            <td>London</td>
+            <td>456</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>Sam Brown</td>
+            <td>Sydney</td>
+            <td>789</td>
+        </tr>
+    </tbody>    
+</table>   
+<br><br><br>
+<label for="name">Name</label> 
+<input type="text">
+<br>
+<label for="sex">Sex:</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br>
+<label for="country">Choose a country:</label>
+<select name="country" id="country">
+    <option value="india">Choose a country</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="australia">Australia</option>
+</select>
+<br>
+<input type="textarea" rows="4" cols="50" placeholder="Enter your address here">
+<br>
+<input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+<label for="subscribe">Subscribe to newsletter</label>
+<br>
+<button type="submit">Submit</button>
+
+<br><br><br>
+
+</body>
+</html>
